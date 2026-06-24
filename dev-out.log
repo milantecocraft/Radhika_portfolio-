@@ -1,0 +1,46 @@
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 8.5s
+ ○ Compiling / ...
+ ✓ Compiled / in 16.7s (1237 modules)
+ GET / 200 in 191ms
+ GET / 200 in 79ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.1s (1222 modules)
+ GET / 404 in 2366ms
+ GET /_next/static/chunks/main-app.js?v=1782218289349 404 in 222ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 250ms
+ GET /_next/static/media/e4af272ccee01ff0-s.p.woff2 404 in 143ms
+ GET / 200 in 995ms
+ GET / 200 in 164ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 3.8s (1222 modules)
+ GET /_next/static/webpack/c8c00722a42401bc.webpack.hot-update.json 404 in 2922ms
+ GET / 200 in 361ms
+ ✓ Compiled in 1672ms (1222 modules)
+ ✓ Compiled in 713ms (614 modules)
+ ✓ Compiled in 508ms (614 modules)
+ ✓ Compiled in 326ms (614 modules)
+ ✓ Compiled in 780ms (614 modules)
+ ✓ Compiled in 438ms (614 modules)
+ ✓ Compiled in 473ms (614 modules)
+ ✓ Compiled in 701ms (614 modules)
+ ✓ Compiled in 433ms (614 modules)
+ ✓ Compiled in 455ms (612 modules)
+ ✓ Compiled in 570ms (612 modules)
+ ✓ Compiled in 2.7s (1219 modules)
+ ✓ Compiled in 2.3s (1219 modules)
+ ✓ Compiled in 2.6s (1217 modules)
+ ✓ Compiled in 3.4s (1217 modules)
+ ✓ Compiled in 2s (1219 modules)
+ ✓ Compiled in 2.5s (1231 modules)
+ ✓ Compiled in 861ms (1231 modules)
+ GET / 200 in 416ms
+[?25h

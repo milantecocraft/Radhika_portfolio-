@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  @apply bg-canvas text-ink font-sans antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtle paper grain for the soft-luxury feel (pure CSS, no image request). */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-medium uppercase tracking-wider2 text-gold;
+  }
+
+  .eyebrow::before {
+    content: "";
+    @apply h-px w-6 bg-gold/60;
+  }
+
+  /* Animated gradient underline used on links and section headings. */
+  .link-underline {
+    @apply relative;
+  }
+  .link-underline::after {
+    content: "";
+    @apply absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-gold transition-transform duration-500;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .link-underline:hover::after,
+  .link-underline:focus-visible::after {
+    @apply scale-x-100;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium
+      transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/60
+      focus-visible:ring-offset-2 focus-visible:ring-offset-canvas;
+  }
+  .btn-primary {
+    @apply btn bg-ink text-canvas hover:-translate-y-0.5 hover:shadow-lift;
+  }
+  .btn-ghost {
+    @apply btn border border-line bg-surface/60 text-ink hover:-translate-y-0.5 hover:border-gold/40 hover:shadow-soft;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-line bg-surface px-4 py-3 text-sm text-ink
+      placeholder:text-muted/60 transition-all duration-300
+      focus:border-gold/60 focus:outline-none focus:ring-2 focus:ring-gold/20;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-br from-gold via-ink to-ink bg-clip-text text-transparent;
+  }
+
+  /* Living, flowing gradient for the hero accent line. */
+  .text-flow {
+    background-image: linear-gradient(
+      110deg,
+      #211c18 0%,
+      #b07d56 24%,
+      #c9a227 38%,
+      #211c18 56%,
+      #b07d56 80%,
+      #211c18 100%
+    );
+    background-size: 250% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: shimmer 7s linear infinite;
+  }
+
+  /* Oversized outlined display type for the editorial hero overlap. */
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(33, 28, 24, 0.78);
+  }
+  .text-outline-gold {
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(176, 125, 86, 0.85);
+  }
+  @media (min-width: 1024px) {
+    .text-outline,
+    .text-outline-gold {
+      -webkit-text-stroke-width: 2px;
+    }
+  }
+
+  /* Animated conic "aurora" mesh used behind the hero. */
+  .aurora-mesh {
+    background-image: conic-gradient(
+      from 0deg,
+      rgba(232, 201, 168, 0.55),
+      rgba(231, 198, 214, 0.5),
+      rgba(203, 188, 230, 0.55),
+      rgba(191, 208, 190, 0.45),
+      rgba(232, 201, 168, 0.55)
+    );
+    filter: blur(44px);
+  }
+}

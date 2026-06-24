@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell($paths = @\\(\"$env:ProgramFiles\\\\nodejs\\\\node.exe\",\"${env:ProgramFiles\\(x86\\)}\\\\nodejs\\\\node.exe\",\"$env:APPDATA\\\\npm\\\\node.exe\",\"$env:LOCALAPPDATA\\\\Programs\\\\nodejs\\\\node.exe\"\\); foreach\\($p in $paths\\){ if\\(Test-Path $p\\){ Write-Output \"FOUND: $p\" } }; Get-Command node,npm,npx,pnpm,yarn -ErrorAction SilentlyContinue | Select-Object Name,Source)",
+      "PowerShell($env:Path = \"C:\\\\Program Files\\\\nodejs;\" + $env:Path; Set-Location \"C:\\\\Users\\\\Binal\\\\Desktop\\\\radhikaportfolio\"; Start-Process -FilePath \"C:\\\\Program Files\\\\nodejs\\\\node.exe\" -ArgumentList \"node_modules\\\\next\\\\dist\\\\bin\\\\next\",\"dev\" -RedirectStandardOutput \"dev-out.log\" -RedirectStandardError \"dev-err.log\" -WindowStyle Hidden; Write-Output \"dev server launching...\")",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
