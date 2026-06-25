@@ -146,7 +146,7 @@ export default function About() {
             viewport={viewportOnce}
             className="mt-6 rounded-xl2 border-l-2 border-gold bg-gradient-to-r from-gold-soft/25 to-transparent p-6 font-display text-lg italic leading-snug text-ink"
           >
-            &ldquo;The best interface is the one that disappears — leaving only the
+            &ldquo;The best interface is the one that disappears - leaving only the
             person and their intent.&rdquo;
           </motion.blockquote>
         </div>

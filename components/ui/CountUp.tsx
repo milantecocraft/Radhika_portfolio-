@@ -1,13 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { animate, useInView, useReducedMotion } from "framer-motion";
-import { ease } from "@/lib/animations";
+import { useEffect, useState } from "react";
+import { useReducedMotion } from "framer-motion";
 
 type Props = {
-  /** e.g. "6+", "40+", "4.9", "2.4M+" — animates the numeric part, keeps prefix/suffix */
+  /** e.g. "8", "4.9", "2.4M+" — animates the numeric part, keeps prefix/suffix */
   value: string;
+  /** seconds */
   duration?: number;
+  /** seconds to wait before counting (lets the hero entrance settle) */
+  delay?: number;
   className?: string;
 };
 
@@ -19,29 +21,38 @@ const parse = (value: string) => {
   return { prefix, target: parseFloat(num), suffix, decimals };
 };
 
-export default function CountUp({ value, duration = 1.8, className }: Props) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, amount: 0.6 });
+const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
+
+export default function CountUp({ value, duration = 1.6, delay = 0.4, className }: Props) {
   const reduce = useReducedMotion();
   const { prefix, target, suffix, decimals } = parse(value);
-  const [display, setDisplay] = useState(reduce ? value : `${prefix}${(0).toFixed(decimals)}${suffix}`);
+  const fmt = (v: number) => `${prefix}${v.toFixed(decimals)}${suffix}`;
+  const [display, setDisplay] = useState(reduce ? value : fmt(0));
 
   useEffect(() => {
-    if (!inView || reduce) {
-      if (reduce) setDisplay(value);
+    if (reduce) {
+      setDisplay(value);
       return;
     }
-    const controls = animate(0, target, {
-      duration,
-      ease,
-      onUpdate: (v) => setDisplay(`${prefix}${v.toFixed(decimals)}${suffix}`),
-    });
-    return () => controls.stop();
-  }, [inView, reduce, target, prefix, suffix, decimals, duration, value]);
+    let raf = 0;
+    let startTs: number | null = null;
+    const delayMs = delay * 1000;
+    const durMs = duration * 1000;
+    const tick = (now: number) => {
+      if (startTs === null) startTs = now;
+      const elapsed = now - startTs - delayMs;
+      if (elapsed <= 0) {
+        raf = requestAnimationFrame(tick);
+        return;
+      }
+      const t = Math.min(elapsed / durMs, 1);
+      setDisplay(fmt(target * easeOutCubic(t)));
+      if (t < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [reduce, value, target, duration, delay]);
 
-  return (
-    <span ref={ref} className={className}>
-      {display}
-    </span>
-  );
+  return <span className={className}>{display}</span>;
 }

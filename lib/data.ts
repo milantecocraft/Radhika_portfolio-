@@ -12,9 +12,9 @@ export const site = {
   photo: "/radhika.jpg", // save the provided portrait here → public/radhika.jpg
   resumeUrl: "/radhika-resume.pdf", // [REPLACE] drop a PDF in /public
   availability: true, // toggles the "Available for work" pill
-  availabilityNote: "Available for select projects — Q3 2026",
+  availabilityNote: "Available for select projects - Q3 2026",
   // Get a free key at https://web3forms.com (register it with the email above).
-  web3formsKey: "YOUR_WEB3FORMS_ACCESS_KEY", // [REPLACE] required for the contact form
+  web3formsKey: "eb03c1b8-adcb-4802-b3f3-21dfa7f3c8fe", // [REPLACE] required for the contact form
   socials: {
     linkedin: "https://www.linkedin.com/in/radhika-g-33b172249/",
     dribbble: "https://dribbble.com/R_Gondaliya",
@@ -30,9 +30,9 @@ export const nav = [
 ];
 
 export const heroStats = [
-  { value: "6+", label: "Years designing" },
-  { value: "40+", label: "Products shipped" },
-  { value: "4.9", label: "Avg client rating" },
+  { value: "8", label: "Featured projects" },
+  { value: "3", label: "Live products" },
+  { value: "8", label: "Industries" },
 ];
 
 // "Trusted by" wordmarks - text logos stand in for real client logos. [REPLACE]
@@ -75,12 +75,12 @@ export const services = [
   },
 ];
 
-// Aggregate impact band — the proof, in numbers. [REPLACE] with real figures.
+// Aggregate impact band — honest figures derived from the real portfolio.
 export const impactStats = [
-  { value: "2.4M+", label: "Users reached across shipped products" },
-  { value: "38%", label: "Avg. lift in activation & conversion" },
-  { value: "60+", label: "Reusable components designed" },
-  { value: "12", label: "Industries, from fintech to health" },
+  { value: "8", label: "Featured projects, end to end" },
+  { value: "3", label: "Live products shipped" },
+  { value: "8", label: "Industries - healthcare to Web3" },
+  { value: "100%", label: "Design-led, research to UI" },
 ];
 
 export const ctaBand = {
@@ -136,33 +136,33 @@ export const projects: Project[] = [
   {
     slug: "prega-center",
     name: "Prega Center",
-    category: "Healthcare · Mobile App", // [REPLACE if needed]
+    category: "Healthcare · Web App",
     year: "2024",
     problem:
-      "Expecting mothers juggled appointments, health metrics, and trimester guidance across scattered tools.",
+      "Expecting parents track appointments, health metrics, and trimester guidance across scattered tools - often anxious and unsure what comes next.",
     role: "UI/UX Designer",
-    tools: ["Figma", "FigJam", "Maze"],
-    outcome: "A calm companion app that organizes the whole pregnancy journey in one place.",
+    tools: ["Figma", "FigJam"],
+    outcome: "A calm maternity-care platform that guides parents through every trimester in one place.",
     outcomeMetric: "Maternity care",
     accent: "from-blush via-gold-soft to-lilac",
     cover: "/projects/prega-center.jpg",
-    liveUrl: "https://bit.ly/4jLbWme",
+    designUrl: "https://bit.ly/4jLbWme",
     overview:
-      "Prega Center supports parents-to-be through every trimester — appointments, wellness, and trusted guidance in a reassuring interface. [REPLACE with real summary]",
+      "Prega Center is a maternity-care web platform that supports expecting parents through pregnancy - organising appointments, health tracking, and trimester-by-trimester guidance in one warm, reassuring interface. I led the UI/UX from journey mapping to the final visual system.",
     challenges: [
-      "Critical info was scattered across notes, apps, and paper.",
-      "Medical content felt clinical and anxiety-inducing.",
-      "Users needed quick, glanceable progress at every stage.",
+      "Critical information was scattered across notes, apps, and paper.",
+      "Medical content can feel clinical and anxiety-inducing for first-time parents.",
+      "Parents needed quick, glanceable progress at every stage.",
     ],
     approach: [
-      "Mapped the full pregnancy journey into clear, supportive stages.",
-      "Designed a warm, legible system with gentle guidance moments.",
-      "Prioritized appointments and health tracking on the home screen.",
+      "Mapped the full pregnancy journey into clear, supportive trimester stages.",
+      "Designed a soft, legible system with gentle guidance and reassurance built in.",
+      "Prioritised appointments and health tracking on the home screen.",
     ],
     results: [
       "One calm home for the entire pregnancy journey.",
-      "Glanceable trimester progress and reminders.",
-      "A reassuring, accessible visual language.",
+      "Glanceable trimester progress, reminders, and guidance.",
+      "A reassuring, accessible visual language for a sensitive moment.",
     ],
   },
   {
@@ -171,160 +171,159 @@ export const projects: Project[] = [
     category: "Beauty · Progressive Web App",
     year: "2024",
     problem:
-      "Salon clients dropped off in clunky booking flows and no-showed without timely reminders.",
-    role: "Product Designer",
-    tools: ["Figma", "Framer", "PWA"],
-    outcome: "An installable booking PWA with fast rebooking and smart reminders.",
+      "Salon clients dropped off in clunky, multi-step booking flows and no-showed without timely reminders.",
+    role: "UI/UX Designer",
+    tools: ["Figma", "Framer"],
+    outcome: "An installable booking PWA with fast rebooking and reminders — no app store required.",
     outcomeMetric: "Booking PWA",
     accent: "from-lilac via-blush to-gold-soft",
     cover: "/projects/salon-pwa.svg",
-    liveUrl: "https://bit.ly/4bnAtc1",
+    designUrl: "https://bit.ly/4bnAtc1",
     overview:
-      "A progressive web app that makes booking salon services effortless and installable — no app store required. [REPLACE with real summary]",
+      "Salon PWA is an installable progressive web app for booking salon services. Clients browse treatments, book in a few taps, and get reminders - with the speed and feel of a native app and none of the app-store friction. I designed the end-to-end booking experience.",
     challenges: [
-      "Multi-step booking caused fall-off before confirmation.",
-      "No reliable reminder loop led to no-shows.",
-      "Needed app-like speed without a native build.",
+      "A multi-step booking flow caused drop-off before confirmation.",
+      "No reliable reminder loop led to costly no-shows.",
+      "It needed native-app speed without a native build.",
     ],
     approach: [
-      "Streamlined booking to a fast, progressive flow.",
-      "Added one-tap rebooking and reminder nudges.",
+      "Streamlined booking into a fast, progressive flow.",
+      "Added one-tap rebooking and timely reminder nudges.",
       "Designed an installable, offline-friendly PWA shell.",
     ],
     results: [
-      "Faster, friendlier booking experience.",
-      "Reduced friction to confirm and rebook.",
-      "App-like feel, instantly accessible on any device.",
+      "A faster, friendlier booking experience.",
+      "Less friction to confirm and rebook.",
+      "An app-like feel, instantly accessible on any device.",
     ],
   },
   {
     slug: "prox-e",
     name: "Prox-E",
-    category: "Mobility · Web App", // [REPLACE if needed]
-    year: "2024",
+    category: "Proxy SaaS · Web Platform",
+    year: "2023",
     problem:
-      "Users couldn't quickly find, compare, and trust the right nearby option in a cluttered map experience.",
+      "Businesses collecting web data at scale get blocked and detected - and proxy products are technical and intimidating to buy and manage.",
     role: "UI/UX Designer",
-    tools: ["Figma", "Maze"],
-    outcome: "A map-first app to locate, compare, and act in seconds.",
-    outcomeMetric: "Map-first UX",
+    tools: ["Figma"],
+    outcome: "A clear, trustworthy interface for choosing and managing datacenter, residential, and mobile proxies.",
+    outcomeMetric: "Proxy platform",
     accent: "from-sage via-gold-soft to-blush",
-    cover: "/projects/prox-e.svg",
-    liveUrl: "https://bit.ly/3UsLS3I",
+    cover: "/projects/prox-e.jpg",
+    liveUrl: "https://prox-e.io/",
+    designUrl: "https://bit.ly/3UsLS3I",
     overview:
-      "Prox-E reimagines a proximity-based experience around a fast, trustworthy map interface. [REPLACE with real summary]",
+      "Prox-E is a premium proxy service - datacenter, residential, and mobile IPs that let businesses access and collect web data at scale, anywhere ('Access Any Data - Anywhere'). I designed a clear, approachable interface for comparing plans and managing proxies, turning a deeply technical product into something easy to understand and trust.",
     challenges: [
-      "Too much information competed for attention on the map.",
-      "Users needed confidence before taking action.",
-      "Comparison was slow and buried.",
+      "Proxy types, bandwidth, and rotation are confusing for non-experts.",
+      "Plans span three proxy types and many tiers - hard to compare.",
+      "A data-access product has to feel legitimate and trustworthy.",
     ],
     approach: [
-      "Designed a clean, layered map with progressive detail.",
-      "Surfaced trust signals and key details up front.",
-      "Made comparison and action a one-tap flow.",
+      "Clarified the three proxy types and when to use each.",
+      "Made plan and bandwidth comparison scannable at a glance.",
+      "Built a confident, modern SaaS interface that signals trust.",
     ],
     results: [
-      "Faster discovery with less visual noise.",
-      "Clearer trust and decision cues.",
-      "A confident, map-first interaction model.",
+      "A clear path from 'which proxy do I need' to purchase.",
+      "Scannable pricing across datacenter, residential, and mobile.",
+      "A trustworthy, professional brand for a technical product.",
     ],
   },
   {
     slug: "ldn-collective",
     name: "LDN Collective",
-    category: "Creative Agency · Website",
+    category: "Built Environment · Website",
     year: "2023",
     problem:
-      "A London creative collective needed a site as crafted and expressive as the work it showcased.",
+      "A London network of built-environment experts needed a website as bold and purpose-driven as its mission to create more sustainable, liveable cities.",
     role: "UI/UX Designer",
     tools: ["Figma", "Adobe XD"],
-    outcome: "An editorial website that showcases the collective's range and voice.",
+    outcome: "An editorial, values-led website positioning the collective as 'city makers.'",
     outcomeMetric: "Brand website",
     accent: "from-gold-soft via-lilac to-blush",
     cover: "/projects/ldn-collective.jpg",
     designUrl: "https://adobe.ly/3FoGSFu",
-    liveUrl: "", // [ADD live link if available]
     overview:
-      "An editorial portfolio site for a multidisciplinary creative collective. [REPLACE with real summary]",
+      "LDN Collective is a London-based network of built-environment experts and creatives working to improve people's lives and the planet's prospects. I designed a bold, editorial website that frames them as 'city makers' — leading with their values and a clear narrative from vision to delivery.",
     challenges: [
-      "Diverse work needed one cohesive, premium frame.",
-      "The site had to feel editorial, not templated.",
-      "Strong typography and rhythm were essential.",
+      "A broad, multidisciplinary network had to feel like one cohesive voice.",
+      "The site needed to communicate values and impact, not just services.",
+      "It had to read as purpose-driven and premium — never templated.",
     ],
     approach: [
-      "Built an editorial layout system with bold type.",
-      "Curated case studies into a confident narrative.",
-      "Tuned spacing and motion for a high-end feel.",
+      "Built a bold, editorial layout system with confident typography.",
+      "Led with the collective's values: decisive, dynamic, collaborative, beyond profit.",
+      "Told a clear story: creating a vision → building the brief → de-risking the project.",
     ],
     results: [
-      "A distinctive, gallery-grade web presence.",
-      "Clear storytelling across varied projects.",
-      "A flexible system for future work.",
+      "A distinctive, mission-forward web presence.",
+      "Clear storytelling of the collective's process and impact.",
+      "A confident brand voice for a values-led network.",
     ],
   },
   {
     slug: "firm-pet",
     name: "Firm Pet",
-    category: "Pet Care · Branding & UI",
+    category: "Pet Health · Web & Product",
     year: "2023",
     problem:
-      "A pet-care brand lacked a cohesive identity and a friendly way for owners to book services.",
+      "Pet owners had no real-time view of their pet's metabolic health — diet, activity, and glucose — making proactive care difficult.",
     role: "UI/UX Designer",
-    tools: ["Figma", "Illustrator", "Adobe XD"],
-    outcome: "A warm brand system and a delightful booking experience for pet services.",
-    outcomeMetric: "Brand & UI",
+    tools: ["Figma", "Adobe XD"],
+    outcome: "A pet metabolic-health product with daily insights, glucose monitoring, and direct vet access.",
+    outcomeMetric: "Pet health",
     accent: "from-sage via-blush to-gold-soft",
     cover: "/projects/firm-pet.jpg",
     designUrl: "https://adobe.ly/3Git8Os",
-    liveUrl: "", // [ADD live link if available]
     overview:
-      "An identity and product design for a modern pet-care service. [REPLACE with real summary]",
+      "Firm Pet helps owners stay ahead of their pet's health with real-time metabolic insights — a continuous glucose monitor plus daily diet and activity tracking, alongside direct access to vets, training videos, and calming music therapy. I designed the marketing site and product UI around the promise 'Prime. Perform. Recover.'",
     challenges: [
-      "Inconsistent brand cues across touchpoints.",
-      "Booking felt impersonal and confusing.",
-      "Needed warmth without losing trust.",
+      "Clinical metabolic data had to feel approachable for everyday owners.",
+      "A health product needs to earn trust quickly.",
+      "The brand had to balance warmth with credibility.",
     ],
     approach: [
-      "Crafted a friendly, trustworthy brand system.",
-      "Designed a simple, reassuring booking flow.",
-      "Balanced playful and professional tones.",
+      "Led with a clear value prop: real-time updates on your pet's metabolic health.",
+      "Turned metrics — metabolic score, glucose — into glanceable insights.",
+      "Paired warm imagery with a trustworthy, structured layout.",
     ],
     results: [
-      "A cohesive, lovable brand identity.",
-      "An easy, friendly booking experience.",
-      "A scalable visual foundation.",
+      "An approachable health-product UI.",
+      "Clear feature storytelling: monitoring, vet access, training, music therapy.",
+      "A credible, caring brand for proactive pet care.",
     ],
   },
   {
     slug: "withme",
-    name: "withme",
-    category: "Social · Web Product",
-    year: "2025",
+    name: "WithMe",
+    category: "Creator Platform · Web",
+    year: "2024",
     problem:
-      "People wanted a simpler, more personal way to plan and share moments with the people closest to them.",
+      "Creators stitched together many disconnected tools to sell content and coaching, making it hard to launch and earn.",
     role: "Product Designer",
     tools: ["Figma", "Framer"],
-    outcome: "A clean, expressive social product — shipped and live.",
+    outcome: "An all-in-one platform to monetise content and coaching in one place.",
     outcomeMetric: "Live product",
     accent: "from-lilac via-gold-soft to-blush",
-    cover: "/projects/withme.svg",
+    cover: "/projects/withme.jpg",
     liveUrl: "https://withme.so/",
     overview:
-      "End-to-end product design for withme — a warmer way to connect and plan together. [REPLACE with real summary]",
+      "WithMe turns a creator's social handle into a ready-to-sell business — using AI to spin up courses, coaching, memberships, checkout, and launch copy in one place ('Drop your handle. Watch AI build your creator business.'). I designed an approachable, end-to-end product experience that makes monetising feel effortless.",
     challenges: [
-      "Existing tools felt impersonal and noisy.",
-      "Onboarding had to feel effortless.",
-      "The product needed a distinct, human voice.",
+      "Creators were juggling fragmented, intimidating tools.",
+      "Onboarding had to feel effortless for non-technical creators.",
+      "The product needed a distinct, trustworthy voice.",
     ],
     approach: [
-      "Designed a focused, friendly core flow.",
-      "Created a soft, expressive visual identity.",
-      "Refined motion and microcopy for warmth.",
+      "Unified content, coaching, and payments into one focused flow.",
+      "Designed a clean, encouraging onboarding and creator dashboard.",
+      "Built a warm, confident visual identity.",
     ],
     results: [
-      "A live product with a distinct personality.",
-      "An effortless, welcoming first experience.",
-      "A cohesive design language across the app.",
+      "A live, all-in-one platform for creators.",
+      "An effortless path from sign-up to earning.",
+      "A cohesive design language across the product.",
     ],
   },
   {
@@ -333,62 +332,62 @@ export const projects: Project[] = [
     category: "AI · SaaS Platform",
     year: "2025",
     problem:
-      "Creating polished marketing videos took teams hours of work across specialist, intimidating tools.",
+      "Creating professional videos meant filming, editing skills, and hours of work — out of reach for most teams.",
     role: "Product Designer",
     tools: ["Figma", "Framer"],
-    outcome: "An approachable AI video-creation platform anyone can use.",
-    outcomeMetric: "AI SaaS",
+    outcome: "An AI platform that turns a document, text, or URL into a polished video — no filming.",
+    outcomeMetric: "AI video",
     accent: "from-gold-soft via-blush to-lilac",
-    cover: "/projects/vidboard.svg",
+    cover: "/projects/vidboard.jpg",
     liveUrl: "https://www.vidboard.ai/",
     overview:
-      "UI/UX for Vidboard — an AI platform that turns ideas into finished videos fast. [REPLACE with real summary]",
+      "Vidboard.ai lets anyone create studio-quality videos without filming — turning a document, text, or URL into a finished video with 100+ AI avatars and 500+ voices across 100+ languages. I designed an approachable UI that makes a deep AI toolset feel simple for marketers, educators, and creators.",
     challenges: [
-      "Powerful AI features risked an overwhelming UI.",
-      "Non-experts needed pro results without complexity.",
-      "The flow had to feel fast and trustworthy.",
+      "A powerful AI feature set risked an overwhelming interface.",
+      "Non-experts needed professional results, fast.",
+      "Multiple input modes — document, text, URL, avatar — had to feel unified.",
     ],
     approach: [
-      "Designed a guided, approachable creation flow.",
-      "Tamed advanced controls behind progressive disclosure.",
-      "Built a confident, modern SaaS interface.",
+      "Designed a guided, step-by-step creation flow.",
+      "Used progressive disclosure to tame advanced controls.",
+      "Built a confident, modern SaaS interface across input modes.",
     ],
     results: [
       "Complex AI made simple and inviting.",
-      "A fast path from prompt to polished video.",
-      "A scalable product design system.",
+      "A fast path from idea to finished video.",
+      "A scalable product design language.",
     ],
   },
   {
     slug: "memusic",
     name: "Memusic",
-    category: "Music · Web Product",
-    year: "2025",
+    category: "Music · Web3 Platform",
+    year: "2024",
     problem:
-      "Listeners wanted a more personal, expressive way to discover, collect, and share the music they love.",
+      "Listeners get nothing back for their attention, and artists are underpaid by traditional streaming.",
     role: "UI/UX Designer",
     tools: ["Figma", "Framer"],
-    outcome: "An expressive music experience designed end-to-end — and live.",
-    outcomeMetric: "Live product",
+    outcome: "A blockchain music platform that rewards listeners and opens new revenue for artists.",
+    outcomeMetric: "Web3 music",
     accent: "from-blush via-lilac to-sage",
-    cover: "/projects/memusic.svg",
+    cover: "/projects/memusic.jpg",
     liveUrl: "https://www.memusic.io/",
     overview:
-      "Product design for Memusic — a more personal, expressive way to experience music. [REPLACE with real summary]",
+      "Memusic is a blockchain-based music platform — the first to pair crypto rewards with a traditional model. Listeners earn for streaming, artists unlock new revenue, and fans can co-own tracks as NFTs. I designed an expressive, trustworthy experience around three promises: borderless & accessible, transparent & fair, and fully personalised.",
     challenges: [
-      "Discovery felt generic and impersonal.",
-      "Sharing music lacked emotional expression.",
-      "The brand needed a distinctive feel.",
+      "Web3 and crypto concepts had to feel approachable to mainstream fans.",
+      "The 'investment' angle had to coexist with a joyful music experience.",
+      "A new platform needed to earn trust immediately.",
     ],
     approach: [
-      "Designed a personal, expressive discovery experience.",
-      "Created rich, shareable music moments.",
-      "Built a bold, memorable visual identity.",
+      "Led with familiar music UX, layering Web3 rewards in gently.",
+      "Designed clear, transparent reward and fractional-ownership flows.",
+      "Built an expressive, personalised visual identity.",
     ],
     results: [
-      "A distinctive, expressive music product.",
-      "More personal discovery and sharing.",
-      "A cohesive, live experience.",
+      "An approachable Web3 music experience.",
+      "Clear rewards and NFT co-ownership flows.",
+      "A bold, memorable brand.",
     ],
   },
 ];
@@ -455,25 +454,14 @@ export const tools = [
 ];
 
 // Set to [] to show the graceful empty state.
-export const testimonials = [
-  {
-    quote:
-      "Radhika has a rare gift for turning ambiguity into clarity. She made our product feel calm and trustworthy — and the metrics followed.",
-    name: "Aarav Mehta", // [REPLACE]
-    title: "Head of Product, Lumen",
-  },
-  {
-    quote:
-      "She listens first, designs second. Our clinicians actually enjoy using the tool now, which I never thought I'd say.",
-    name: "Dr. Lena Okafor", // [REPLACE]
-    title: "Clinical Lead, Atlas Health",
-  },
-  {
-    quote:
-      "A true systems thinker. The design system she built still scales with us two years later.",
-    name: "Sofia Romano", // [REPLACE]
-    title: "Engineering Manager, Terra",
-  },
+// Real testimonials only. Add entries as Radhika collects them — until then the
+// Testimonials section shows a graceful empty state (no fabricated quotes).
+export const testimonials: { quote: string; name: string; title: string }[] = [
+  // {
+  //   quote: "…",
+  //   name: "Client name",
+  //   title: "Role, Company",
+  // },
 ];
 
 export const contact = {
