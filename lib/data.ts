@@ -69,9 +69,9 @@ export const services = [
   },
   {
     no: "04",
-    title: "Prototyping & Motion",
-    body: "Interactive, motion-true prototypes that communicate intent, win stakeholder buy-in, and de-risk engineering.",
-    deliverables: ["Interactive prototypes", "Microinteractions", "Motion specs", "Handoff"],
+    title: "Prototyping & Animation",
+    body: "Interactive, animation-true prototypes that communicate intent, win stakeholder buy-in, and de-risk engineering.",
+    deliverables: ["Interactive prototypes", "Microinteractions", "animation specs", "Handoff"],
   },
 ];
 
@@ -100,7 +100,7 @@ export const about = {
   values: [
     { title: "User-led", body: "Decisions grounded in research, not assumptions." },
     { title: "Systems-minded", body: "Scalable components over one-off screens." },
-    { title: "Craft-obsessed", body: "Motion, spacing, and type tuned to the pixel." },
+    { title: "Craft-obsessed", body: "Animation, spacing, and type tuned to the pixel." },
   ],
   // Quick scannable facts beside the portrait. [REPLACE]
   facts: [
@@ -414,7 +414,7 @@ export const processSteps = [
   {
     no: "04",
     title: "Prototype",
-    body: "Interactive, motion-true prototypes that communicate intent to stakeholders and engineers.",
+    body: "Interactive, animation-true prototypes that communicate intent to stakeholders and engineers.",
     icon: "prototype",
   },
   {
@@ -432,7 +432,7 @@ export const skillGroups = [
   },
   {
     title: "UI & Interaction",
-    skills: ["Visual Design", "Interaction Design", "Motion Design", "Responsive Design", "Accessibility (WCAG)"],
+    skills: ["Visual Design", "Interaction Design", "Animation Design", "Responsive Design", "Accessibility (WCAG)"],
   },
   {
     title: "Systems & Strategy",
