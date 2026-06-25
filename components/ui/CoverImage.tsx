@@ -51,7 +51,7 @@ export default function CoverImage({
           priority={priority}
           onLoad={() => setLoaded(true)}
           onError={() => setFailed(true)}
-          className={`object-cover transition-opacity duration-700 ${
+          className={`object-cover object-top transition-opacity duration-700 ${
             loaded ? "opacity-100" : "opacity-0"
           }`}
         />

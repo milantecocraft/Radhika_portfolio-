@@ -7,7 +7,7 @@ export const site = {
   name: "Radhika Gondaliya",
   role: "UI/UX Designer",
   tagline: "I design calm, human interfaces that make complex products feel effortless.",
-  location: "Ahmedabad, India · Working globally",
+  location: "Surat, Gujarat, India · Working globally",
   email: "radhikagondaliya2106@gmail.com",
   photo: "/radhika.jpg", // save the provided portrait here → public/radhika.jpg
   resumeUrl: "/radhika-resume.pdf", // [REPLACE] drop a PDF in /public
@@ -35,7 +35,7 @@ export const heroStats = [
   { value: "4.9", label: "Avg client rating" },
 ];
 
-// "Trusted by" wordmarks — text logos stand in for real client logos. [REPLACE]
+// "Trusted by" wordmarks - text logos stand in for real client logos. [REPLACE]
 export const brands = [
   "Lumen",
   "Atlas Health",
@@ -52,13 +52,13 @@ export const services = [
   {
     no: "01",
     title: "UX Research & Strategy",
-    body: "I uncover what users actually need through interviews, testing, and journey mapping — then turn insight into a clear product direction.",
+    body: "I uncover what users actually need through interviews, testing, and journey mapping - then turn insight into a clear product direction.",
     deliverables: ["User interviews", "Journey maps", "Usability testing", "Product strategy"],
   },
   {
     no: "02",
     title: "Product & Interface Design",
-    body: "High-fidelity, accessible UI with a strong point of view on hierarchy, type, and rhythm — interfaces that feel inevitable.",
+    body: "High-fidelity, accessible UI with a strong point of view on hierarchy, type, and rhythm - interfaces that feel inevitable.",
     deliverables: ["UI design", "Responsive layouts", "Accessibility (WCAG)", "Visual identity"],
   },
   {
@@ -93,9 +93,9 @@ export const about = {
   eyebrow: "About",
   heading: "Design that respects people's time, attention, and intent.",
   paragraphs: [
-    "I'm a product designer who lives in the space between research and craft. I start with the messy reality of real users — their goals, frustrations, and context — then shape it into interfaces that feel obvious in hindsight.",
+    "I'm a product designer who lives in the space between research and craft. I start with the messy reality of real users — their goals, frustrations, and context - then shape it into interfaces that feel obvious in hindsight.",
     "My work spans UX research, interaction design, and design systems. I care about the small things: the easing on a transition, the rhythm of a layout, the one word that makes a button click. Good design should feel quiet, confident, and kind.",
-    "I partner closely with engineers and PMs, because the best experiences are built, not just drawn. I prototype early, test often, and let evidence — not ego — lead the decision.",
+    "I partner closely with engineers and PMs, because the best experiences are built, not just drawn. I prototype early, test often, and let evidence - not ego - lead the decision.",
   ],
   values: [
     { title: "User-led", body: "Decisions grounded in research, not assumptions." },
@@ -104,7 +104,7 @@ export const about = {
   ],
   // Quick scannable facts beside the portrait. [REPLACE]
   facts: [
-    { label: "Based in", value: "Ahmedabad, India" },
+    { label: "Based in", value: "Surat, Gujarat, India" },
     { label: "Focus", value: "Product · Web · Mobile" },
     { label: "Experience", value: "6+ years" },
     { label: "Currently", value: "Open to new work" },
@@ -145,7 +145,7 @@ export const projects: Project[] = [
     outcome: "A calm companion app that organizes the whole pregnancy journey in one place.",
     outcomeMetric: "Maternity care",
     accent: "from-blush via-gold-soft to-lilac",
-    cover: "/projects/prega-center.png",
+    cover: "/projects/prega-center.jpg",
     liveUrl: "https://bit.ly/4jLbWme",
     overview:
       "Prega Center supports parents-to-be through every trimester — appointments, wellness, and trusted guidance in a reassuring interface. [REPLACE with real summary]",
@@ -241,7 +241,7 @@ export const projects: Project[] = [
     outcome: "An editorial website that showcases the collective's range and voice.",
     outcomeMetric: "Brand website",
     accent: "from-gold-soft via-lilac to-blush",
-    cover: "/projects/ldn-collective.svg",
+    cover: "/projects/ldn-collective.jpg",
     designUrl: "https://adobe.ly/3FoGSFu",
     liveUrl: "", // [ADD live link if available]
     overview:
@@ -274,7 +274,7 @@ export const projects: Project[] = [
     outcome: "A warm brand system and a delightful booking experience for pet services.",
     outcomeMetric: "Brand & UI",
     accent: "from-sage via-blush to-gold-soft",
-    cover: "/projects/firm-pet.svg",
+    cover: "/projects/firm-pet.jpg",
     designUrl: "https://adobe.ly/3Git8Os",
     liveUrl: "", // [ADD live link if available]
     overview:
