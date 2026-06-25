@@ -77,8 +77,8 @@ export const services = [
 
 // Aggregate impact band — honest figures derived from the real portfolio.
 export const impactStats = [
-  { value: "8", label: "Featured projects, end to end" },
-  { value: "3", label: "Live products shipped" },
+  { value: "20+", label: "Featured projects, end to end" },
+  { value: "30+", label: "Live products shipped" },
   { value: "8", label: "Industries - healthcare to Web3" },
   { value: "100%", label: "Design-led, research to UI" },
 ];
