@@ -367,7 +367,7 @@ export const projects: Project[] = [
       "Listeners get nothing back for their attention, and artists are underpaid by traditional streaming.",
     role: "UI/UX Designer",
     tools: ["Figma", "Framer"],
-    outcome: "A blockchain music platform that rewards listeners and opens new revenue for artists.",
+    outcome: "Memusic is a direct-to-fan music streaming platform that rewards listeners for their engagement while ensuring independent artists are paid fairly.",
     outcomeMetric: "Web3 music",
     accent: "from-blush via-lilac to-sage",
     cover: "/projects/memusic.jpg",
