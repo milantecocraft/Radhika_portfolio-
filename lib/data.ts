@@ -177,7 +177,7 @@ export const projects: Project[] = [
     outcome: "An installable booking PWA with fast rebooking and reminders — no app store required.",
     outcomeMetric: "Booking PWA",
     accent: "from-lilac via-blush to-gold-soft",
-    cover: "/projects/salon-pwa.svg",
+    cover: "/projects/salon-pwa.jpg",
     designUrl: "https://bit.ly/4bnAtc1",
     overview:
       "Salon PWA is an installable progressive web app for booking salon services. Clients browse treatments, book in a few taps, and get reminders - with the speed and feel of a native app and none of the app-store friction. I designed the end-to-end booking experience.",
